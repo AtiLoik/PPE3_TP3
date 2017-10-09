@@ -7,9 +7,12 @@
 			If (!empty( $_SESSION['connexion'])) // si quelqu'un est connecté
 			{ ?>
 				<a class="btn" href='index.php?uc=Artistes&action=ajouter'>Ajouter un artiste</a>
+				
 			<?php } ?>
+			
 			<table><tr><th>Numéro</th><th>Nom</th><th>actions</th></tr>
 			<script>
+
 			function supprArtiste(id) {
 				if(confirm("Voulez vous vraimer supprimer cet artiste. Attention la suppression de l'artiste entrainera la suppression de tous ses albums ?"))
 				{
@@ -19,7 +22,9 @@
 					alert("l'artiste n'a pas été supprimé.");
 				}
 			}
+
 			</script>
+
 			<?php
 			foreach($lesArtistes as $Artiste) //parcours du tableau d'objets récupérés
 			{ 	$idArt=$Artiste->getId();           
