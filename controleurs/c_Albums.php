@@ -18,7 +18,11 @@ switch($action)
 		include("vues/v_albumsPourArtiste.php");//puis on affiche la vue qui utilise les données
 		break;
 		}
-	
+	case 'supprimer' :
+					// a compléter Artist::supprimerArtist($_REQUEST['numart']);
+					header("refresh: 0;url=index.php?uc=Album&action=all");
+					break;
+
 	default:echo "rien";
 	}
 	?>
