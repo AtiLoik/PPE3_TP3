@@ -30,8 +30,9 @@ switch($action)
 					break;
 					
 	case 'supprimer' :
-					//Artist::supprimerArtist($_REQUEST['numart']);
+					Artist::supprimerArtist($_REQUEST['numart']);
 					header("refresh: 0;url=index.php?uc=Artistes&action=all");
+					//refresh: 0;
 					break;
 	default: echo "rien";
 } 

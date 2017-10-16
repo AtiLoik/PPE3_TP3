@@ -16,7 +16,7 @@
 			function supprAlbum(id) {
 				if(confirm("Voulez vous vraiment supprimer cet Album ?"))
 				{
-					location.href='index.php?uc=Album&action=supprimer';
+					location.href='index.php?uc=Album&action=supprimer&numalb='+id;
 					//&numalb='+id
 				}
 				else {
