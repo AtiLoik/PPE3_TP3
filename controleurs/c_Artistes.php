@@ -24,13 +24,13 @@ switch($action)
 					}
 					else // s'il s'agit d'un ajout
 					{
-						Artist::ajouterArtiste($_POST['nomArtiste']);
+						// a compléter Artist::ajouterArtiste($_POST['nomArtiste']);
 						header("refresh: 0;url=index.php?uc=Artistes&action=all");
 					}
 					break;
 					
 	case 'supprimer' :
-					// a compléter Artist::supprimerArtist($_REQUEST['numart']);
+					//Artist::supprimerArtist($_REQUEST['numart']);
 					header("refresh: 0;url=index.php?uc=Artistes&action=all");
 					break;
 	default: echo "rien";
