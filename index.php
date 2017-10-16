@@ -5,6 +5,7 @@ require_once("function.inc.php");
 require_once("modeles/entity.class.php");
 require_once("modeles/Artist.class.php");
 require_once("modeles/Album.class.php");
+require_once("modeles/genres.class.php");
 
 include("vues/v_entete.php") ;	//bandeau en-tête
 include("vues/v_menu.php") ;	//menu
@@ -26,6 +27,10 @@ switch($uc) 				//suivant le contrôleur dans uc
 	 
 	case 'Albums' :						//on va au contrôleur secondaire c_voirAlbums
 		 include("controleurs/c_Albums.php");
+		 break;
+
+	case 'Genres' :
+		 include("controleurs/c_Genres.php");
 		 break;
 }
 include("vues/v_pied.php") ;// pied de site
