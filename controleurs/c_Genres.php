@@ -30,8 +30,9 @@ switch($action)
 					break;
 					
 	case 'supprimer' :
-					// a compléter Artist::supprimerArtist($_REQUEST['numart']);
+					Genre::supprimerGenre($_REQUEST['numgenre']);
 					header("refresh: 0;url=index.php?uc=Genres&action=all");
+					//refresh: 0;
 					break;
 	default: echo "rien";
 } 

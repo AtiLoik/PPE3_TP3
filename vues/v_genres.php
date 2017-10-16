@@ -14,7 +14,7 @@
 			<script>
 
 			function supprGenre(id) {
-				if(confirm("Voulez vous vraimer supprimer cet artiste. Attention la suppression de l'artiste entrainera la suppression de tous ses albums ?"))
+				if(confirm("Voulez vous vraiment supprimer cet album ?"))
 				{
 					location.href='index.php?uc=Genres&action=supprimer&numgenre='+id;
 				}

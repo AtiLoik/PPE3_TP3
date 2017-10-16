@@ -19,9 +19,11 @@ switch($action)
 		break;
 		}
 	case 'supprimer' :
-					// a compléter Artist::supprimerArtist($_REQUEST['numart']);
+	{
+					Album::supprimerAlbum($_REQUEST['numalb']);
 					header("refresh: 0;url=index.php?uc=Album&action=all");
 					break;
+	}
 
 	default:echo "rien";
 	}
