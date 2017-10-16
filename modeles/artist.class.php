@@ -35,7 +35,7 @@ class Artist extends Entity{
         $sql="delete from artist where id= :id " ;
         $resultat=MonPdo::getInstance()->prepare($sql);
         $resultat->bindParam(':id', $id);
-        $resultat->execute();
+        $resultat->execute($sql);
 		// ajouter la gestion des exceptions
     }
 	// trouve un artiste grace à son id passé en paramètre

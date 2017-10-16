@@ -34,13 +34,15 @@
 			<tr>
 			<td width=5%><?php echo $idArt?></td><td width=80%><?php echo $nom?></a></td><!--affichage dans des liens-->
 			<td class='action' width=15%>
+
+
 				<a href='index.php?uc=Albums&action=artiste&numart=<?php echo $idArt ?>' class="imageRechercher" title='Voir la liste des albums'></a>
 		<?php		
 				//If (!empty( $_SESSION['connexion']))  si quelqu'un est connecté
 				//{ 
 		?>	
-					<a href='index.php?uc=Artistes&action=modifier&numart=<?php echo $idArt ?>' class="imageModifier" title="modifier l'artiste"></a>
-					<span class="imageSupprimer" onclick="javascript:supprArtiste('<?php echo $idArt ;?>')" title="supprimer l'artiste" ></span> <!-- on met un span pour pouvoir invoquer le on click -->
+				<a href='index.php?uc=Artistes&action=modifier&numart=<?php echo $idArt ?>' class="imageModifier" title="modifier l'artiste"></a>
+				<span class="imageSupprimer" onclick="javascript:supprArtiste('<?php echo $idArt ;?>')" title="supprimer l'artiste" ></span> <!-- on met un span pour pouvoir invoquer le on click -->
 		<?php // } 
 		?>
 			</td>
