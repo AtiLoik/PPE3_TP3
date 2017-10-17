@@ -9,7 +9,12 @@
 				<a class="btn" href='index.php?uc=Artistes&action=ajouter'>Ajouter un artiste</a>
 
 			<?php } ?>
-			
+				<p>Rechercher un artiste : </p>
+				<form action='index.php?uc=Artistes&action=Recherche' method='post'>
+				<input type="text" name="numart">
+				<input type="submit" name="Rechercher un artiste">
+				</form>
+
 			<table><tr><th>Numéro</th><th>Nom</th><th>actions</th></tr>
 			<script>
 
