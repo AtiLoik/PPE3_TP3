@@ -10,7 +10,7 @@
 			<h2>Fiche Genre</h2>
 			<section>
 				<form action='index.php?uc=Genres&action=VerifForm' method='post'>
-				<input type='hidden' name="idGenre" value='<?php if(!empty($_REQUEST['numart'])){echo $LeGenre->getId();}?>'>
+				<input type='hidden' name="idGenre" value='<?php if(!empty($_REQUEST['numgenre'])){echo $LeGenre->getId();}?>'>
 				<label for "nomGenre">Nom du genre</label> <input type="text" name="nomGenre" id="nomGenre" 
 				value="<?php if(!empty($_REQUEST['numgenre'])){echo $LeGenre->getNom();} ?>">
 				<input type="submit" value="<?php if(!empty($_REQUEST['numgenre'])){echo "Modifier le genre";}else{echo "Ajouter un genre";} ?>" />
