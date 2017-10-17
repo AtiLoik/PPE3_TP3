@@ -26,8 +26,9 @@ switch($action)
 					{
 						// a compléter Artist::ajouterArtiste($_POST['nomArtiste']);
 						header("refresh: 0;url=index.php?uc=Artistes&action=all");
-					}
+					
 					break;
+					}
 					
 	case 'supprimer' :
 					Artist::supprimerArtist($_REQUEST['numart']);

@@ -19,11 +19,11 @@ switch($action)
 		break;
 		}
 	case 'supprimer' :
-	{
+	
 					Album::supprimerAlbum($_REQUEST['numalb']);
 					header("refresh: 0;url=index.php?uc=Album&action=all");
 					break;
-	}
+	
 
 	default:echo "rien";
 	}

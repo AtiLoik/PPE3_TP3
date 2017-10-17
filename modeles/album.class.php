@@ -52,7 +52,7 @@ class Album extends Entity{
     }
     public static function supprimerAlbum($id)
     {
-        $sql="delete from album where id= :id " ;
+        $sql="delete  from album where id= :id " ;
         $resultat=MonPdo::getInstance()->prepare($sql);
         $resultat->bindParam(':id', $id);
         $resultat->execute();
