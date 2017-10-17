@@ -16,7 +16,7 @@
 			function supprAlbum(id) {
 				if(confirm("Voulez vous vraiment supprimer cet Album ?"))
 				{
-					location.href='index.php?uc=Album&action=supprimer&numalb='+id;
+					location.href='index.php?uc=Albums&action=supprimer&numalb='+id;
 					//&numalb='+id
 				}
 				else {
@@ -41,7 +41,7 @@
 				//If (!empty( $_SESSION['connexion']))  si quelqu'un est connecté
 				//{ 
 		?>	
-					<a href='index.php?uc=Album&action=modifier&numalb=<?php echo $idAlb ?>' class="imageModifier" title="modifier l'album"></a>
+					<a href='index.php?uc=Albums&action=modifier&numalb=<?php echo $idAlb ?>' class="imageModifier" title="modifier l'album"></a>
 					<span class="imageSupprimer" onclick="javascript:supprAlbum('<?php echo $idAlb ;?>')" title="Supprimer l'album" ></span> <!-- on met un span pour pouvoir invoquer le on click -->
 						<!-- à compléter pour voir un albums (nom et morceaux)
 						pour supprimer un album et pour modifier un album -->

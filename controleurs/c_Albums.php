@@ -21,7 +21,7 @@ switch($action)
 	case 'supprimer' :
 	
 					Album::supprimerAlbum($_REQUEST['numalb']);
-					header("refresh: 0;url=index.php?uc=Album&action=all");
+					header("refresh: 0;url=index.php?uc=Albums&action=all");
 					break;
 	
 
