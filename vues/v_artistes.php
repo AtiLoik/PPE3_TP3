@@ -15,6 +15,8 @@
 				<input type="submit" name="Rechercher un artiste">
 				</form>
 
+				<a class="btn" href='index.php?uc=Artistes&action=ajouter'>Ajouter un artiste</a>
+
 			<table><tr><th>Numéro</th><th>Nom</th><th>actions</th></tr>
 			<script>
 

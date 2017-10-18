@@ -21,7 +21,7 @@ class Genre extends Entity{
     */
     public static function ajouterGenre($nom)
     {
-		$sql="insert into genre values('', :nom )" ;
+		$sql="insert into genre(nom) values(:nom )" ;
         $resultat=MonPdo::getInstance()->prepare($sql);
         $resultat->bindParam(':nom', $nom);
         $resultat->execute();

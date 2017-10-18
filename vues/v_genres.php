@@ -25,6 +25,8 @@
 
 			</script>
 
+			<a class="btn" href='index.php?uc=Genres&action=ajouter'>Ajouter un Genres</a>
+
 		<?php
 			foreach($lesGenres as $Genres) //parcours du tableau d'objets récupérés
 			{ 	$idGen=$Genres->getId();           

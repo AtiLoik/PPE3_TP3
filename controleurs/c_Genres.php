@@ -24,7 +24,7 @@ switch($action)
 					}
 					else // s'il s'agit d'un ajout
 					{
-						// a compléter Artist::ajouterArtiste($_POST['nomArtiste']);
+						Genre::ajouterGenre($_POST['nomGenre']);
 						header("refresh: 0;url=index.php?uc=Genres&action=all");
 					}
 					break;

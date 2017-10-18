@@ -24,15 +24,14 @@ switch($action)
 					}
 					else // s'il s'agit d'un ajout
 					{
-						// a compléter Artist::ajouterArtiste($_POST['nomArtiste']);
+						Artist::ajouterArtiste($_POST['nomArtiste']);
 						header("refresh: 0;url=index.php?uc=Artistes&action=all");
 					}
 					break;
 
-	case 'Recherche' :
+	case 'Recherche' :      
 					{
 						$lesArtistes=Artist::rechercheNom($_REQUEST['numart']);
-						var_dump($lesArtistes);
 						include("vues/v_artistes.php");
 						break;
 					}

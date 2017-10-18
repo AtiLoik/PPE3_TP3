@@ -21,7 +21,7 @@ class Artist extends Entity{
     */
     public static function ajouterArtiste($nom)
     {
-		$sql="insert into artist values('', :nom )" ;
+		$sql="insert into artist(nom) values(:nom )" ;
         $resultat=MonPdo::getInstance()->prepare($sql);
         $resultat->bindParam(':nom', $nom);
         $resultat->execute();
