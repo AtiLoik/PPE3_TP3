@@ -26,9 +26,17 @@ switch($action)
 					{
 						// a compléter Artist::ajouterArtiste($_POST['nomArtiste']);
 						header("refresh: 0;url=index.php?uc=Artistes&action=all");
-					
-					break;
 					}
+					break;
+
+	case 'Recherche' :
+					{
+						$lesArtistes=Artist::rechercheNom($_REQUEST['numart']);
+						var_dump($lesArtistes);
+						include("vues/v_artistes.php");
+						break;
+					}
+
 					
 	case 'supprimer' :
 					Artist::supprimerArtist($_REQUEST['numart']);

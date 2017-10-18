@@ -52,7 +52,7 @@ class Artist extends Entity{
 
     public static function rechercheNom($nom)
     {
-        $sql="SELECT * FROM artist where nom like '%?%'" ;
+        $sql="SELECT * FROM artist where nom = ?" ;
         $resultat=MonPdo::getInstance()->prepare($sql);
         $resultat->execute(array($nom));
         $lesArtist=$resultat->fetchAll(PDO::FETCH_CLASS|PDO::FETCH_PROPS_LATE,'Artist');
